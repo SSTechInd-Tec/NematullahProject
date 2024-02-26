@@ -1,0 +1,21 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <div class="text-center text-black"><h4>{{ data.name }}</h4></div>
+            <table class="table table-bordered table-hover text-center table-striped">
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                </tr>
+                {% for i in data2 %}
+                    <tr>
+                        <td>{{ i[0] }}</td>
+                        <td>{{ i[1] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+            <img src="{{ url_for('static', filename='regions/'+data.img) }}" class="w-100">
+        </div>
+    </div>
+{% endblock contents %}

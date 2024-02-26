@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <h3>Certificate Gellary</h3>
+            <div class="row">
+                {% for i in data %}
+                    <div class="p-2 text-center col-lg-4 col-md-4 col-sm-6 col-12">
+                        <img class="img-thumbnail"
+                             src="{{ url_for('static', filename='certificates/'+i.img) }}">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock contents %}

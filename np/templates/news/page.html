@@ -1,0 +1,44 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+
+            <div class="bg-primary py-4 my-4 text-white text-center" style="width: 100px; height: 100px;">
+                <h5>{{ data.date }}</h5>
+            </div>
+            <i class="fa fa-file-text mb-3"> News</i>
+            <h4 class="text-muted font-weight-bold">{{ data.title }}</h4>
+            <p>{{ data.text }}</p>
+
+            <img class="w-100 rounded my-2" src="{{ url_for('static', filename='news/'+data.img1) }}">
+
+            {% if data.img2 != None %}
+                <img class="w-100 rounded my-2" src="{{ url_for('static', filename='news/'+data.img2) }}">
+            {% endif %}
+
+            {% if data.img3 != None %}
+                <img class="w-100 rounded my-2" src="{{ url_for('static', filename='news/'+data.img3) }}">
+            {% endif %}
+
+            {% if data.img4 != None %}
+                <img class="w-100 rounded my-2" src="{{ url_for('static', filename='news/'+data.img4) }}">
+            {% endif %}
+
+            {% if data.img5 != None %}
+                <img class="w-100 rounded my-2" src="{{ url_for('static', filename='news/'+data.img5) }}">
+            {% endif %}
+
+            <div class="d-flex">
+                {% if data.id != 1 %}
+                    <a class="btn btn-primary mt-3 float-start me-auto" href="{{ url_for('news_.news_page', nid=dec(data.id)) }}">Previous</a>
+                {% endif %}
+
+                {% if data.id != last_id %}
+                    <a class="btn btn-primary mt-3 float-end ms-auto" href="{{ url_for('news_.news_page', nid=inc(data.id)) }}">Next</a>
+                {% endif %}
+            </div>
+
+
+        </div>
+    </div>
+{% endblock contents %}

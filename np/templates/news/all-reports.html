@@ -1,0 +1,19 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <h1 class="text-primary font-weight-bold">Projects Progress Report</h1>
+            <div>
+                {% for i in data %}
+                    <div class="w-100 p-3 my-3 shadow">
+                        <h6><i class="fa fa-clock"></i> {{ i.date }} <i class="fa fa-th"></i> Projects Progress Report</h6>
+                        <h4>{{ i.title }}</h4>
+                        <img class="w-25 rounded my-2" src="{{ url_for('static', filename='events/'+i.img1) }}">
+                        <br><br>
+                        <a class="btn btn-primary mt-3" href="{{ url_for('news_.reports_page', nid=i.id) }}">Read More</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock contents %}

@@ -1,0 +1,31 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <div class="text-center text-black"><h4>COAR's STRATEGIC PLAN</h4></div>
+            <br>
+            <h6>
+                PREFACE
+            </h6>
+            <p>
+                A Strategic Plan is one of the important management tools as it provides a road map for how to achieve
+                an organization‘s objective. It is a mechanism that helps management optimize the resource allocation
+                to different sectors and tasks. It helps focus organizational resources in the same direction as to
+                achieve the overall objective. Strategic plan spells out the destination of the organization over a
+                specific period of time, and define how the organization well get there. It defines the objectives to
+                be achieved with the available resources over a specific period of time. Coordination of Afghan Relief
+                (COAR) developed its current strategy in 2012. The plan has enabled COAR to develop and work towards
+                its objectives in line with its vision and mission statements, thereby laying the foundation for this
+                strategic plan. COAR has largely achieved its objective set out in the previous five years plan and has
+                thereby learned many new lessons. Recent changes in Afghanistan’s socio-political environment provide
+                civil society organizations (CSOs) a wide range of opportunities for organizational growth, but has
+                also introduced a number of challenges previously not faced by CSOs. Societal changes and more educated
+                youth open up for increased attention to the needs of and larger involvement of women and girls in
+                emergency and development projects, an opportunity COAR is well placed to capitalize on...
+            </p>
+            <h6><a class="text-secondary text-decoration-none" href="{{ url_for('static', filename='pdfs/CoAR-Strategic-Plan-final.pdf') }}">
+                Read more...
+            </a></h6>
+        </div>
+    </div>
+{% endblock contents %}

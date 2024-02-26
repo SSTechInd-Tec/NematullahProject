@@ -1,0 +1,38 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <h1 class="text-primary font-weight-bold">News</h1>
+                <div class="row">
+                    {% for i in data %}
+                        <div class="p-2 col-lg-3 col-md-3 col-sm-6 col-5">
+                            <div class="p-3 shadow h-100">
+                                <h6><i class="fa fa-clock"></i> {{ i.date }} <i class="fa fa-th"></i> News</h6>
+                                <h4>{{ i.title }}</h4>
+                                <p>{{ trim(i.text) }}</p>
+                                <img class="w-100 rounded my-2" src="{{ url_for('static', filename='news/'+i.img1) }}">
+
+                                {% if i.img2 != None %}
+                                    <img class="w-100 rounded my-2" src="{{ url_for('static', filename='news/'+i.img2) }}">
+                                {% endif %}
+
+                                {% if i.img3 != None %}
+                                    <img class="w-100 rounded my-2" src="{{ url_for('static', filename='news/'+i.img3) }}">
+                                {% endif %}
+
+                                {% if i.img4 != None %}
+                                    <img class="w-100 rounded my-2" src="{{ url_for('static', filename='news/'+i.img4) }}">
+                                {% endif %}
+
+                                {% if i.img5 != None %}
+                                    <img class="w-100 rounded my-2" src="{{ url_for('static', filename='news/'+i.img5) }}">
+                                {% endif %}
+
+                                <a class="btn btn-primary mt-3" href="{{ url_for('news_.news_page', nid=i.id) }}">Read More</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+        </div>
+    </div>
+{% endblock contents %}

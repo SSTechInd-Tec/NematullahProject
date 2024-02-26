@@ -1,0 +1,31 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <div class="text-end text-black">
+                {% for i in data %}
+                    <div class="p-2 w-50 mx-auto my-2 ">
+                        <div class="row">
+                            <div class="border col-lg-9 p-3 col-md-9 col-sm-9 col-9">
+                                <h6>RFP</h6>
+                                <p>{{ i.text }}</p>
+                                <a href="{{ url_for('static', filename='pdfs/rfps/'+i.link1) }}">Click Here</a>
+                                {% if i.link2 %}
+                                    <br>
+                                    <a href="{{ url_for('static', filename='pdfs/rfps/'+i.link2) }}">Click Here</a>
+                                {% endif %}
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-1">
+                                <img src="{{ url_for('static', filename='site-images/shape.png') }}">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 pt-4">
+                                {{ i.year }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+{% endblock contents %}

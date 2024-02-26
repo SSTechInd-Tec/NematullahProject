@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <div class="text-center"><h3>PAYAM-E-INKASHAF MAGAZIN</h3></div>
+            <p>Dear colleagues,</p>
+            <p>
+                Payam-e-Inkashaf Magazine is the magazine of Civil Society Empowerment Network (CEN), it has been
+                publishing after every three months and it has been funding by Coordination of Afghan Relief-CoAR.
+            </p>
+            <p>
+                From last 17 years CoAR is publishing the mentioned magazine. CoAR has published 124 versions and the
+                latest version has been shared with you. In future CoAR will share the upcoming version via email
+                with all colleagues.
+            </p>
+            <p>
+                Best Regards,
+                <br>
+                <br>
+                Payam –e- Inkashaf Magazine Administration
+            </p>
+            {% for i in data %}
+                <a class="text-decoration-none" href="{{ url_for('static', filename='pdfs/magazine/'+i.link1) }}">{{ i.name }}</a><br><br>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock contents %}

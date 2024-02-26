@@ -1,0 +1,296 @@
+{% extends "template.html" %}
+{% block contents %}
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='site-images/slider0.jpg') }}" alt="Chicago" class="d-block w-100">
+                <div class="carousel-caption carousel-caption2">
+                    <h3>YEAR 2023</h3>
+                    <h2>ADRRN</h2>
+                    <p>Annual General Assembly of ADRRN</p>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='site-images/slider1.jpg') }}"  alt="Los Angeles" class="d-block w-100">
+                <div class="carousel-caption carousel-caption2">
+                    <h3>YEAR 2018</h3>
+                    <h2>ADRRN</h2>
+                    <p>ADRRN ANNUAL Gathering</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='site-images/slider2.jpg') }}" alt="Chicago" class="d-block w-100">
+                <div class="carousel-caption carousel-caption2">
+                    <h3>HELMAND</h3>
+                    <h2>WATER SUPPLY</h2>
+                    <p>The water supply scheme project</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='site-images/slider3.jpg') }}" alt="Chicago" class="d-block w-100">
+                <div class="carousel-caption carousel-caption2">
+                    <h3>KANDAHAR</h3>
+                    <h2>EDUCATION</h2>
+                    <p>FCDO Humanitarian Project</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='site-images/slider4.jpg') }}" alt="Chicago" class="d-block w-100">
+                <div class="carousel-caption carousel-caption2">
+                    <h3>KUNAR PROVINCE</h3>
+                    <h2>WASH</h2>
+                    <p>The construction of the water supply pipe scheme project</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-lg-10 col-md-10 col-sm-12 col-12 mx-auto">
+        <div class="f-msg">
+            <h2>Founding Member Message</h2>
+            <br>
+            <h4 class="text-secondary">Dear friends,</h4>
+            <p class="text-secondary">
+                Thank you for visiting COAR’s website,. Hope that the profile of COAR and its activities in regards to various socio, economic,DRR, education, development and Humanitarian programs delineated will give you a clear picture of the principles for which the organization stands for and is actively working.
+            </p>
+            <p class="text-secondary">
+                Your attention is particularly drawn to millions of those children, aged people and marginalized women who are the worst affected. Therefore, there is an urgent need to address their problems immediately.
+            </p>
+            <p class="text-secondary">
+                The hot issues in Afghanistan is currently the increasing insecurity and internal disparities and its impact on the common people particularly IDPs and Returnees. This need the active support of all kind-hearted people.
+            </p>
+
+            <a href="#" class="btn btn-primary p-3">Read more ></a>
+        </div>
+
+        <div class="v-box row text-white">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 pe-2" style="margin-bottom: 100px;">
+                <div class="bg-primary px-4 py-5 h-100">
+                    <h4>CoAR’s VISION</h4>
+                    <p>A just and equitable society that embraces the rights of all people to fundamental freedom through participation and contribution in all spheres of social, cultural, economic and political life.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 ps-2 ">
+                <div class="bg-primary px-4 py-5 h-80" style="margin-bottom: 100px;">
+                    <h4>CoAR’s MISSION</h4>
+                    <p>Strengthening and promoting of Humanitarian and development activities of the society through undertaking of varying projects and preparing grounds in which the people are empowered to improve their living standards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-adver h-100 p-5 text-white mb-5">
+        <div class="captions p-5">
+            <h3>COAR’s CORE VALUES </h3>
+            <h5>COAR comply with all main core values of</h5>
+            <div class="row">
+                <h5 class="col-lg-3 col-md-3 col-sm-12 col-12 my-4"><i class="fa-solid fa-user"></i> LEADERSHIP</h5>
+                <h5 class="col-lg-3 col-md-3 col-sm-12 col-12 my-4"><i class="fa-solid fa-hand"></i> TOLERANCE</h5>
+                <h5 class="col-lg-3 col-md-3 col-sm-12 col-12 my-4"><i class="fa-solid fa-users"></i> TEAM WORK</h5>
+                <h5 class="col-lg-3 col-md-3 col-sm-12 col-12 my-4"><i class="fa-solid fa-home"></i> FOSTERING A LEARNING ENVIRONMENT</h5>
+                <h5 class="col-lg-3 col-md-3 col-sm-12 col-12 my-4"><i class="fa-solid fa-handshake"></i> DIGNITY</h5>
+                <h5 class="col-lg-3 col-md-3 col-sm-12 col-12 my-4"><i class="fa-solid fa-file-text"></i> COMMITMENT</h5>
+                <h5 class="col-lg-3 col-md-3 col-sm-12 col-12 my-4"><i class="fa-solid fa-recycle"></i> PEOPLE CENTEREDNESS</h5>
+                <h5 class="col-lg-3 col-md-3 col-sm-12 col-12 my-4"><i class="fa-solid fa-search"></i> TRANSPARENCY, ACCOUNTABILITY AND TRUST</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-10 col-md-10 col-sm-12 col-12 mx-auto repos">
+        <h2 class="my-5 text-secondary">Videos</h2>
+        <div class="row mb-5">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <iframe style="width: 100%; height: auto" src="https://www.youtube.com/embed/nt7WDGgi-AA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <iframe style="width: 100%; height: auto" src="https://www.youtube.com/embed/D4zf6S_lHwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <iframe style="width: 100%; height: auto" src="https://www.youtube.com/embed/R-zSdY30sXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <iframe style="width: 100%; height: auto" src="https://www.youtube.com/embed/J4crEA909n8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="h-100 text-white mb-5" style="width: 100%">
+        <div class="captions2 p-5">
+            <div class="text-center">
+                <h3>COAR ACHIEVEMENT</h3>
+                <h5>Citizens Organization for Advocacy and Resilience formerly Coordination of Afghan Relief - COAR 30 Years<br>Achievements.</h5>
+            </div>
+            <div class="row text-black">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-4">
+                    <div class="bg-white font-weight-normal p-3 rounded-2">
+                        <h6>ON GOING PROJECTS <i class="fa-solid fa-line-chart  text-primary"></i></h6>
+                        <h1>15</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-4">
+                    <div class="bg-white font-weight-normal p-3 rounded-2">
+                        <h6>Completed Projects <i class="fa-solid fa-list-ol  text-primary"></i></h6>
+                        <h1>715</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-4">
+                    <div class="bg-white font-weight-normal p-3 rounded-2">
+                        <h6>CoAR'S Current STAFF <i class="fa-solid fa-users  text-primary"></i></h6>
+                        <h1>800</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-4">
+                    <div class="bg-white font-weight-normal p-3 rounded-2">
+                        <h6>BENEFICIARIES Annually <i class="fa-solid fa-user text-primary"></i></h6>
+                        <h1>120000</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-10 col-md-10 col-sm-12 col-12 mx-auto repos">
+        <div class="text-center"><h1 class="my-5 text-secondary">WHERE WE WORK</h1></div>
+        <div class="row mb-5">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                <div class="f-msg2">
+                    <img class="w-100" src="{{ url_for('static', filename='site-images/map.png') }}">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                <div class="f-msg2 text-secondary p-5">
+                    <h5>COAR is active in 8 zone of the country</h5>
+                    <ol style="line-height: 44px">
+                        {% for i in data2 %}
+                            <li><a class="text-decoration-none text-primary" href="{{ url_for('home.regions', rid=i.id) }}">{{ i.name }}</a></li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="my-5 text-secondary">Publications</h1>
+        <div class="row mb-5 text-center">
+            {% for i in data %}
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <h5 class="text-secondary">{{ i.name }}</h5>
+                    <a href="{{ url_for('static', filename='pdfs/publications/pdfs/'+i.link1) }}">
+                        <img class="w-100" src="{{ url_for('static', filename='pdfs/publications/imgs/'+i.img) }}">
+                    </a>
+                </div>
+            {% endfor %}
+            <div class="d-flex flex-row-reverse my-5">
+                <a href="{{ url_for('resources.publications') }}" class="btn btn-secondary px-2 py-2 col-lg-2 col-md-2 col-sm-12">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 p-5 bg-white">
+        <div class="text-center"><h1 class="my-5 text-secondary">COAR's DONORS</h1></div>
+        <div class="row text-center mx-auto" style="width: 85%">
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12">
+                <a href="https://www.near.ngo/"><img class="w-100" src="{{ url_for('static', filename='site-images/near.png') }}"></a>
+                <h5>NEAR</h5>
+                <a href="https://www.rescue.org/"><img class="w-100" src="{{ url_for('static', filename='site-images/irc.jpg') }}"></a>
+                <h5>IRC</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/ocha2.png') }}">
+                <h5>UNOCHA</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/nca11.png') }}">
+                <h5>NCA</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/wfp-1.png') }}">
+                <h5>WFP</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/unicef.png') }}">
+                <h5>UNICEF</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/usaid.png') }}">
+                <h5>USAID</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/world-bank.png') }}">
+                <h5>WB</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/adrrn.png') }}">
+                <h5>ADRRN</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/saarc1.png') }}">
+                <h5>SAARC</h5>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/misfam0.png') }}">
+                <h5>MISFA(WB)</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/ingo_save_the_children.jpeg') }}">
+                <h5>NEAR</h5>
+                <img class="w-100" src="{{ url_for('static', filename='site-images/undp-4801.png') }}">
+                <h5>IRC</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 p-5 ">
+        <div class="text-center"><h1 class="my-5 text-secondary">COAR's PARTNERS</h1></div>
+        <div class="row text-center mx-auto" style="width: 85%">
+            <div class="col-lg-2 col-md-2 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/cen-logo.png') }}">
+                <h5>CEN</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/moec.jpg') }}">
+                <h5>MoEC</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/moed.jpg') }}">
+                <h5>MoED</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/mrrd.jpg') }}">
+                <h5>MRRD</h5>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/mrrd.png') }}">
+                <h5>MoPH</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/mail.jpg') }}">
+                <h5>MAIL</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/images.jpg') }}">
+                <h5>NEPA</h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/dmac-no-bg.png') }}">
+                <h5>ANDMA</h5>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-12 py-5">
+                <img class="w-100" src="{{ url_for('static', filename='site-images/download.png') }}">
+                <h5>TWIN</h5>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 p-5 bg-white">
+        <h3 class="my-5 text-primary">Social Network</h3>
+        <div class="text-center">
+            <h4 class="face-book"><a href="https://www.facebook.com/Coordination-of-Afghan-Relief-103923764296648/">
+                <i class="fab fa-facebook-f bg-primary text-white py-2 px-3 rounded-1"></i></a></h4>
+        </div>
+    </div>
+
+
+
+{% endblock contents %}

@@ -1,0 +1,31 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                    <h3>I now feel never lonely and never hopeless. </h3>
+                    <p>
+                        Wajidullah, a 14-year boy from Waziristan, told his untold story of life. We migrated to Khost
+                        province of Afghanistan in 2014 when Pakistan Army started indiscriminate military operation
+                        against terrorist invaded in the region, he added.
+                    </p>
+                    <p>
+                        We were helpless for days and days in the Khost province. In those days I had no hope for
+                        education. After six months of our migration, NRC started primary classes in our camp which
+                        gave hope to me for better future. However, NRC closed those classes in 2016 that leave us
+                        hopeless for education. But CoAR showed us light for better future when CoAR established
+                        education classes, Wajidullah added.
+                    </p>
+                    <p>
+                       Now I can say that I will complete my studies and will have good education and hence better
+                        life. At the end, I must say thanks to CoAR and UNHCR who helped us in such hard period of life.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <img class="w-100 img-thumbnail" src="{{ url_for('static', filename='stories/wajid.jpg') }}">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock contents %}

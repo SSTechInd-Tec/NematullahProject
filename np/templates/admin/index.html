@@ -1,0 +1,18 @@
+{% extends "admin/master.html" %}
+{% block head %}
+{% endblock head %}
+{% block head_css %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bs/style.css') }}">
+    <link rel="icon" type="x-icon" href="{{ url_for('static', filename='site-images/logo.png') }}">
+    </style>
+{% endblock head_css %}
+{% block title %}
+    COAR - Admin
+{% endblock title %}
+
+{% block body %}
+    <main class="container-md container-lg text-center">
+        <h1 class="bg-primary text-white text-center jumbotron">Welcome to COAR Admin Page</h1>
+    </main>
+{% endblock body %}

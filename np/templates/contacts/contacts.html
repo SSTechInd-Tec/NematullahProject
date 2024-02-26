@@ -1,0 +1,108 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <h4 class="text-muted">Leave Us a Massege</h4>
+            <form id="form1" method="POST">
+                {{ form.hidden_tag() }}
+                <div class="form-group mt-4">
+                    {{ form.name.label }}
+                    {{ form.name(class='form-control p-3 border-bottom') }}
+                </div>
+                <div class="form-group mt-4">
+                    {{ form.email.label }}
+                    {{ form.email(class='form-control p-3 border-bottom') }}
+                </div>
+                <div class="form-group mt-4">
+                    {{ form.subject.label }}
+                    {{ form.subject(class='form-control p-3 border-bottom') }}
+                </div>
+                <div class="form-group mt-4">
+                    {{ form.msg.label }}
+                    {{ form.msg(class='form-control p-3 border-bottom') }}
+                </div>
+                <div class="form-group mt-3">
+                    {{ form.send_msg(class='btn btn-primary') }}
+                </div>
+            </form>
+            <script>
+                for (let item of document.forms['form1'].elements) {
+                    item.style.border = 'none'
+                }
+            </script>
+
+            <div class="text-center my-5"><h4>CONTACT US</h4></div>
+            <table class="table table-hover table-bordered text-center" style="font-size: 15px">
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+                {% for i in data1 %}
+                    <tr>
+                        <td>{{ i.fake_id }}</td>
+                        <td>{{ i.name }}</td>
+                        <td>{{ i.title }}</td>
+                        <td></td>
+
+
+                        {% if i.email2 != None %}
+                            <td><a href="mailto:{{ i.email }}">{{ i.email }}</a> / <a href="mailto:{{ i.email2 }}">{{ i.email2 }}</a></td>
+                        {% else %}
+                            <td><a href="mailto:{{ i.email }}">{{ i.email }}</a></td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            </table>
+            <div class="text-center my-5"><h4>CONTACT US AT REGIONAL LEVEL</h4></div>
+            <table class="table table-hover table-bordered text-center" style="font-size: 15px">
+                <tr>
+                    <th>No</th>
+                    <th>Zone Name</th>
+                    <th>Responsible Person</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+                {% for i in data2 %}
+                    <tr>
+                        <td>{{ i.fake_id }}</td>
+                        <td>{{ i.name }}</td>
+                        <td>{{ i.title }}</td>
+                        <td></td>
+                        <td></td>
+
+
+
+                    </tr>
+                {% endfor %}
+            </table>
+            <div class="text-center my-5"><h4>COAR's ENGINEERS CONTACT</h4></div>
+            <table class="table table-hover table-bordered text-center" style="font-size: 15px">
+                <tr>
+                    <th>No</th>
+                    <th>Zone Name</th>
+                    <th>Responsible Person</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+                {% for i in data3 %}
+                    <tr>
+                        <td>{{ i.fake_id }}</td>
+                        <td>{{ i.name }}</td>
+                        <td>{{ i.title }}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+            <div class="text-center my-5"><h6>
+                <span class="text-decoration-underline">Main Office Address:</span><br>
+                 Dehbori Shahid squar, Wahdat bridge , House #48, District #3, Kabul Afghanistan.
+            </h6></div>
+            <iframe class="w-100" height="400" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d326.1879856592586!2d69.12509438378478!3d34.50874788085009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDehbori%20Shahid%20squar%2C%20COAR%20District%20%233%2C%20Kabul%20Afghanistan.!5e0!3m2!1sen!2s!4v1691827275138!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+{% endblock contents %}

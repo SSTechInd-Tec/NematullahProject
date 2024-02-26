@@ -1,0 +1,48 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <h1 class="text-primary font-weight-bold">News</h1>
+                <div class="row">
+                    {% for i in data %}
+                        <div class="p-2 col-lg-3 col-md-3 col-sm-6 col-5">
+                            <div class="p-3 shadow h-100">
+                                <h6><i class="fa fa-clock"></i> {{ i.date }} <i class="fa fa-th"></i> News</h6>
+                                <h4>{{ i.title }}</h4>
+                                <p>{{ trim(i.text) }}</p>
+                                <a class="btn btn-primary mt-3" href="{{ url_for('news_.news_page', nid=i.id) }}">Read More</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <a class="btn btn-outline-primary w-100 my-3" href="{{ url_for('news_.all_news') }}">See All News</a>
+
+                <h1 class="text-primary font-weight-bold my-3">Events</h1>
+                <div>
+                    {% for i in data2 %}
+                        <div class="w-100 p-3 my-3 shadow">
+                            <h6><i class="fa fa-clock"></i> {{ i.date }} <i class="fa fa-th"></i> Events</h6>
+                            <h4>{{ i.title }}</h4>
+                            <h6>{{ i.author }}</h6>
+                            <a class="btn btn-primary mt-3" href="{{ url_for('news_.events_page', nid=i.id) }}">Read More</a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <a class="btn btn-outline-primary w-100 my-3" href="{{ url_for('news_.all_events') }}">See All Events</a>
+
+                <h1 class="text-primary font-weight-bold my-3">Projects Progress Report</h1>
+                <div>
+                    {% for i in data3 %}
+                        <div class="w-100 p-3 my-3 shadow">
+                            <h6><i class="fa fa-clock"></i> {{ i.date }} <i class="fa fa-th"></i> Projects Progress Report</h6>
+                            <h4>{{ i.title }}</h4>
+                            <img class="w-25 rounded my-2" src="{{ url_for('static', filename='events/'+i.img1) }}">
+                            <br><br>
+                            <a class="btn btn-primary mt-3" href="{{ url_for('news_.reports_page', nid=i.id) }}">Read More</a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <a class="btn btn-outline-primary w-100 my-3" href="{{ url_for('news_.all_reports') }}">See All Projects Progress Report</a>
+        </div>
+    </div>
+{% endblock contents %}

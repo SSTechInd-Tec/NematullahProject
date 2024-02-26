@@ -1,0 +1,19 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <h3>PUBLICATIONS</h3>
+            <div class="row">
+                {% for i in data %}
+                    <div class="p-2 text-center col-lg-3 col-md-3 col-sm-6 col-12">
+                        <h6>{{ i.name }}</h6>
+                        <a href="{{ url_for('static', filename='pdfs/publications/pdfs/'+i.link1) }}">
+                            <img class="img-thumbnail"
+                                src="{{ url_for('static', filename='pdfs/publications/imgs/'+i.img) }}">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock contents %}

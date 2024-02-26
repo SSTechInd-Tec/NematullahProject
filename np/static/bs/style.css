@@ -1,0 +1,12 @@
+body {
+    background: #343a40;
+}
+
+* {
+    color: white;
+}
+input[readonly="readonly"],
+input[type="checkbox"]{
+    display: none;
+}
+

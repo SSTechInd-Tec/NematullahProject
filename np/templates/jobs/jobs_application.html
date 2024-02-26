@@ -1,0 +1,11 @@
+{% extends "template.html" %}
+{% block contents %}
+    <div class="container-md container-lg my-5">
+        <div class="bg-white f-msg2 p-5 text-secondary">
+            <div class="text-center text-black"><h4>JOB APPLICATION FORM</h4></div>
+            <br>
+            <p>Click the link below to download CoAR’s Job Application Form</p>
+            <a href="{{ url_for('static', filename='pdfs/21-Job-Application-Form.pdf') }}">Job Application Form </a>
+        </div>
+    </div>
+{% endblock contents %}
